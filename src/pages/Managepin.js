@@ -2,10 +2,11 @@ import React, { PureComponent } from 'react'
 import HeaderNav from '../components/HeaderNav'
 import '../resource/css/style.css'
 import { DropdownButton, MenuItem} from 'react-bootstrap'
+import ModalPin from '../components/modalPin'
 
 class Managepin extends PureComponent {
   render() {
-    return <div>
+    return <div className="root">
         <HeaderNav />
         <div className="main-section">
           <div className="container">
@@ -26,9 +27,7 @@ class Managepin extends PureComponent {
                   </div>
                 </div>
                 <div className="col-lg-3   text-left wow fadeInUp delay-02s">
-                  <button style={{ marginTop: '10px' }} type="button" className="btn btn-primary">
-                    เปลี่ยน Key
-                  </button>
+                  <ModalPin />
                   <DropdownButton style={{ marginTop: '10px' }} title="โปรดพิจารณา" id="bg-nested-dropdown">
                     <MenuItem eventKey="1">อนุมัติ</MenuItem>
                     <MenuItem eventKey="2">ไม่อนุมัติ</MenuItem>
@@ -48,9 +47,7 @@ class Managepin extends PureComponent {
                   </div>
                 </div>
                 <div className="col-lg-3   text-left wow fadeInUp delay-02s">
-                  <button style={{ marginTop: '10px' }} type="button" className="btn btn-primary">
-                    เปลี่ยน Key
-                  </button>
+                  <ModalPin />
                   <DropdownButton style={{ marginTop: '10px' }} title="โปรดพิจารณา" id="bg-nested-dropdown">
                     <MenuItem eventKey="1">อนุมัติ</MenuItem>
                     <MenuItem eventKey="2">ไม่อนุมัติ</MenuItem>
@@ -70,9 +67,7 @@ class Managepin extends PureComponent {
                   </div>
                 </div>
                 <div className="col-lg-3 col-sm-1  text-left wow fadeInUp delay-02s">
-                  <button style={{ marginTop: '10px' }} type="button" className="btn btn-primary">
-                    เปลี่ยน Key
-                  </button>
+                  <ModalPin />
                   <DropdownButton style={{ marginTop: '10px' }} title="โปรดพิจารณา" id="bg-nested-dropdown">
                     <MenuItem eventKey="1">อนุมัติ</MenuItem>
                     <MenuItem eventKey="2">ไม่อนุมัติ</MenuItem>

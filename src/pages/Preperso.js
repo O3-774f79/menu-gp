@@ -4,7 +4,7 @@ import '../resource/css/style.css'
 import { DropdownButton, MenuItem, Button } from 'react-bootstrap'
 class Preperso extends PureComponent {
   render() {
-    return <div>
+    return <div className="root">
         <HeaderNav />
         <div className="main-section">
           <div className="container">
@@ -45,7 +45,7 @@ class Preperso extends PureComponent {
               <form>
                 <div className="form-group row">
                   <div className="col-xs-3 col-xs-offset-4">
-                    <label for="ex3" style={{ marginRight: 10 }}>
+                    <label  style={{ marginRight: 10 }}>
                       จำนวนวน
                     </label>
                     <input className="form-control" id="ex3" type="text" />

@@ -14,6 +14,9 @@
 .fl-rt {
   float: right;
 }
+.root {
+  background: gray
+}
 /* Clear Floated Elements
 ---------------------------------*/
 .clear {

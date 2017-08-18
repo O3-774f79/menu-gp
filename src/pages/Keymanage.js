@@ -1,10 +1,11 @@
 import React, { PureComponent } from 'react'
 import '../resource/css/style.css'
 import HeaderNav from '../components/HeaderNav'
+import ModalComponent from '../components/modaKey'
 
 class Keymanage extends PureComponent {
   render() {
-    return <div>
+    return <div className="root">
         <HeaderNav />
         <section className="main-section">
           <div className="container">
@@ -13,23 +14,9 @@ class Keymanage extends PureComponent {
                 <h2> Key Management System</h2>
               </div>
               <div className="well" style={{ height: '500px' }} id="service-body">
-                <div className="row">
-                  <div className="col-md-12" style={{ marginBottom: '50px' }}>
-                    <div className="col-md-2" style={{ textAlign: 'right' }}>
-                      <label for="">input PID</label>
-                    </div>
-                    <div className="col-md-6">
-                      <input type="text" className="form-control" />
-                    </div>
-                    <div className="col-md-2">
-                      <button className="btn btn-warning">verify</button>
-                    </div>
-                  </div>
-                </div>
-
                 <div className="col-md-12">
                   <div className="col-md-12">
-                    <table className="table table-striped">
+                    <table className="table table-striped" style={{marginTop: 60}}>
                       <thead>
                         <tr>
                           <th style={{ textAlign: 'center', width: '20%' }}>
@@ -62,9 +49,7 @@ class Keymanage extends PureComponent {
                       </tbody>
                     </table>
                     <div className="row" style={{ margin: '30px' }}>
-                      <button type="button" className="btn btn-primary" >
-                        เปลี่ยน Key
-                      </button>
+                      <ModalComponent />
                     </div>
                   </div>
                 </div>

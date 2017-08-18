@@ -6,7 +6,7 @@ class Preperso extends PureComponent {
   render() {
     return <div>
         <HeaderNav />
-        <div className="main-section" id="service">
+        <div className="main-section">
           <div className="container">
             <h2 className="well" style={{ boxShadow: '0 0 30px black' }}>
               Pre Perso

@@ -11,14 +11,10 @@ import image6 from '../resource/images/Untitled Diagram (6).png'
 import image7 from '../resource/images/Untitled Diagram (7).png'
 import image8 from '../resource/images/Untitled Diagram (8).png'
 import image9 from '../resource/images/Untitled Diagram (9).png'
-const styles = {
-    p: {
-      fontSize: 20
-    } 
-}
 class Menu extends PureComponent {
   render() {
-    return <div className="container-fluid">
+    return (
+      <div className="container-fluid">
         <div className="card">
           <div className="inCard">
             <h1> SCMS CDG GlabalPlatform</h1>
@@ -121,6 +117,7 @@ class Menu extends PureComponent {
           </li>
         </ul>
       </div>
+    )
   }
 }
 

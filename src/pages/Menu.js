@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import '../resource/css/hexagons.css'
+import '../resource/css/style.css'
 import { Link } from 'react-router-dom'
 import image from '../resource/images/Untitled.png'
 import image1 from '../resource/images/Untitled Diagram (1).png'
@@ -63,7 +64,7 @@ class Menu extends PureComponent {
             <div className="hexIn">
               <Link className="hexLink" to="/Lifecyclemanagement">
                 <img src={image4} alt="" />
-                <h1>Key/Card/App/Profile Life Cycle Management</h1>
+                <h1 style={{fontSize:21}}>Key/Card/App/Profile Life Cycle Management</h1>
                 <p style={{ fontSize: 19 }}>manage key/card/app profile</p>
               </Link>
             </div>

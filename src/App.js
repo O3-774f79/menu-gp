@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import {  Switch, Route } from 'react-router-dom'
 import Menu from './pages/Menu'
 import Preperso from './pages/Preperso'
 import Infocard from './pages/Infocard'

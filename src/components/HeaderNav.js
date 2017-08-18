@@ -1,13 +1,13 @@
 import React, { PureComponent } from 'react'
+import { Link } from 'react-router-dom'
 class HeaderNav extends PureComponent {
   render() {
-    return (
-      <div>
+    return <div>
         <nav className="main-nav-outer" id="test">
           <div className="container">
             <ul className="main-nav">
               <li>
-                <a href="">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <a href="#service">Menu1</a>
@@ -28,7 +28,6 @@ class HeaderNav extends PureComponent {
           </div>
         </nav>
       </div>
-    )
   }
 }
 export default HeaderNav

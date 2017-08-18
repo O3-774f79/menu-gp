@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
 }
-.container-fluid {
+/* .container-fluid {
   background: rgb(230, 172, 0);
-}
+} */
 #hexGrid {
   display: flex;
   flex-wrap: wrap;
@@ -53,7 +53,7 @@
   position: absolute;
   visibility: visible;
   outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
-  background-color: rgb(122, 0, 153);
+  background-color: #8B008B;
 }
 .hexLink {
   display: blgk;

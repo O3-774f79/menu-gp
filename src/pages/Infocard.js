@@ -63,7 +63,7 @@ class Infocard extends PureComponent {
                     </div>
                   </div>
                 </div>
-                <figure id="image" className="col-lg-6 col-sm-5  text-right wow fadeInUp delay-02s">
+                <figure className="col-lg-6 col-sm-5  text-right wow fadeInUp delay-02s">
                   <img id="image" src={FaceShadow} />
                 </figure>
               </div>

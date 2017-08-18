@@ -1,7 +1,8 @@
 import React, { PureComponent } from 'react'
 import HeaderNav from '../components/HeaderNav'
 import '../resource/css/style.css'
-import { DropdownButton, MenuItem, Button } from 'react-bootstrap'
+import { DropdownButton, MenuItem} from 'react-bootstrap'
+
 class Managepin extends PureComponent {
   render() {
     return <div>

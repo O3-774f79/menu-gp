@@ -53,7 +53,7 @@
   position: absolute;
   visibility: visible;
   outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
-  background-color: #8B008B;
+  /* background-color: #8B008B; */
 }
 .hexLink {
   display: blgk;
@@ -87,7 +87,7 @@
   width: 100%;
   padding: 8%;
   box-sizing: border-box;
-  background-color: rgb(204, 245, 255);
+  background-color:rgba(179, 240, 255, 0.86);
   font-weight: 300;
   -webkit-transition: -webkit-transform .2s ease-out, opacity .3s ease-out;
   transition: transform .2s ease-out, opacity .3s ease-out;

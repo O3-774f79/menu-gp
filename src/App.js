@@ -13,7 +13,7 @@ import CustomerSupport from './pages/CustomerSupport'
 import Layout from './components/Layout'
 class App extends Component {
   render() {
-    return <div className="well">
+    return <div>
         <Switch>
           <Route exact path="/" component={Menu} />
           <Layout>

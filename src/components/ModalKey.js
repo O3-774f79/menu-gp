@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
-import { Button, Modal } from 'react-bootstrap'
-class ModalComponent extends PureComponent {
+import Button from 'react-bootstrap/lib/Button'
+import Modal from 'react-bootstrap/lib/Modal'
+class ModalKeyComponent extends PureComponent {
   constructor(props) {
     super(props)
     this.state = { show: false }
@@ -15,7 +16,7 @@ class ModalComponent extends PureComponent {
   }
   render() {
     console.log(this.state)
-    return <div>
+    return <div style={{marginLeft:'40%'}}>
         <Button bsStyle="primary" onClick={this.open}>
           เปลี่ยน key
         </Button>
@@ -59,4 +60,4 @@ class ModalComponent extends PureComponent {
       </div>
   }
 }
-export default ModalComponent
+export default ModalKeyComponent

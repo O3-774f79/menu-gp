@@ -1,6 +1,4 @@
 import React, { PureComponent } from 'react'
-import '../resource/css/style.css'
-import HeaderNav from '../components/HeaderNav'
 import FaceShadow from '../resource/images/face_shadow.png'
 import { FormControl } from 'react-bootstrap'
 class Infocard extends PureComponent {
@@ -12,7 +10,8 @@ class Infocard extends PureComponent {
       EngName: 'EngName',
       DOB: 'DOB',
       Religion: 'Religion',
-      Address: 'Address'
+      Address: 'Address',
+      Image: { FaceShadow }
     }
     this.inputData = this.inputData.bind(this)
   }
@@ -29,97 +28,83 @@ class Infocard extends PureComponent {
 
   render() {
     return (
-      <div className="root">
-        <HeaderNav />
-        <div className="main-section">
-          <div className="container">
-            <h2 className="well" id="service">
-              Card Production System
-            </h2>
-            <div className="well" id="service-body">
-              <div className="row">
-                <div className="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
-                  <div className="service-list">
-                    <div className="service-list-col2">
-                      <h3>PID</h3>
-                      <FormControl
-                        type="text"
-                        value={this.state.PID}
-                        placeholder="Enter text"
-                        disable
-                      />
-                    </div>
-                  </div>
-                  <div className="service-list">
-                    <div className="service-list-col2">
-                      <h3>ชื่อ-สกุล</h3>
-                      <FormControl
-                        type="text"
-                        value={this.state.ThaiName}
-                        placeholder="Enter text"
-                        disable
-                      />
-                    </div>
-                  </div>
-                  <div className="service-list">
-                    <div className="service-list-col2">
-                      <h3>Name-Lastname</h3>
-                      <FormControl
-                        type="text"
-                        value={this.state.EngName}
-                        placeholder="Enter text"
-                        disable
-                      />
-                    </div>
-                  </div>
-                  <div className="service-list">
-                    <div className="service-list-col2">
-                      <h3>เกิด</h3>
-                      <FormControl
-                        type="text"
-                        value={this.state.DOB}
-                        placeholder="Enter text"
-                        disable
-                      />
-                    </div>
-                  </div>
-                  <div className="service-list">
-                    <div className="service-list-col2">
-                      <h3>ศาสนา</h3>
-                      <FormControl
-                        type="text"
-                        value={this.state.Religion}
-                        placeholder="Enter text"
-                        disable
-                      />
-                    </div>
-                  </div>
-                  <div className="service-list">
-                    <div className="service-list-col2">
-                      <h3>ที่อยู่</h3>
-                      <FormControl
-                        type="text"
-                        value={this.state.Address}
-                        placeholder="Enter text"
-                        disable
-                      />
-                    </div>
-                  </div>
-                </div>
-                <figure className="col-lg-6 col-sm-5  text-right wow fadeInUp delay-02s">
-                  <img id="image" src={FaceShadow} />
-                </figure>
+      <div>
+        <div className="row">
+          <div className="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+            <div className="service-list">
+              <div className="service-list-col2">
+                <h3>PID</h3>
+                <FormControl
+                  type="text"
+                  value={this.state.PID}
+                  placeholder="Enter text"
+                  disable
+                />
               </div>
-              <button
-                style={{ margin: '20px' }}
-                id="btn"
-                onClick={this.inputData}
-              >
-                Click me
-              </button>
+            </div>
+            <div className="service-list">
+              <div className="service-list-col2">
+                <h3>ชื่อ-สกุล</h3>
+                <FormControl
+                  type="text"
+                  value={this.state.ThaiName}
+                  placeholder="Enter text"
+                  disable
+                />
+              </div>
+            </div>
+            <div className="service-list">
+              <div className="service-list-col2">
+                <h3>Name-Lastname</h3>
+                <FormControl
+                  type="text"
+                  value={this.state.EngName}
+                  placeholder="Enter text"
+                  disable
+                />
+              </div>
+            </div>
+            <div className="service-list">
+              <div className="service-list-col2">
+                <h3>เกิด</h3>
+                <FormControl
+                  type="text"
+                  value={this.state.DOB}
+                  placeholder="Enter text"
+                  disable
+                />
+              </div>
+            </div>
+            <div className="service-list">
+              <div className="service-list-col2">
+                <h3>ศาสนา</h3>
+                <FormControl
+                  type="text"
+                  value={this.state.Religion}
+                  placeholder="Enter text"
+                  disable
+                />
+              </div>
+            </div>
+            <div className="service-list">
+              <div className="service-list-col2">
+                <h3>ที่อยู่</h3>
+                <FormControl
+                  type="text"
+                  value={this.state.Address}
+                  placeholder="Enter text"
+                  disable
+                />
+              </div>
             </div>
           </div>
+          <figure className="col-lg-6 col-sm-5  text-right wow fadeInUp delay-02s">
+            <img id="image" src={FaceShadow} />
+          </figure>
         </div>
+        <button style={{ margin: '20px' }} id="btn" onClick={this.inputData}>
+          Click me
+        </button>
       </div>
     )
   }

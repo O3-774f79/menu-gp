@@ -3,7 +3,7 @@ import React from 'react'
 const CardControl = () => {
   return (
     <div>
-      Card Control
+      Card Inventory / Card Control System
     </div>
   )
 }

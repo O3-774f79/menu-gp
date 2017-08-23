@@ -4,20 +4,14 @@ import MenuItem from 'react-bootstrap/lib/MenuItem'
 import Button  from 'react-bootstrap/lib/Button'
 class Preperso extends PureComponent {
   render() {
-    return (
-      <div>
+    return <div>
         <div className="row" style={{ margin: '50px 150px 100px 80px' }}>
           <div className="col-lg-4  ">
             <label style={{ marginRight: '20px', fontSize: 20 }}>
               หน่วยงาน
             </label>
-            <DropdownButton
-              title="Dropdown"
-              id="bg-nested-dropdown"
-              style={{ backgroundColor: '#1aff1a' }}
-            >
-              <MenuItem eventKey="1">Dropdown link</MenuItem>
-              <MenuItem eventKey="2">Dropdown link</MenuItem>
+            <DropdownButton title="หน่วยงาน" id="bg-nested-dropdown" style={{ backgroundColor: '#66cdaa' }}>
+              <MenuItem eventKey="1">กรมการปกครอง</MenuItem>
             </DropdownButton>
           </div>
 
@@ -25,26 +19,16 @@ class Preperso extends PureComponent {
             <label style={{ marginRight: '20px', fontSize: 20 }}>
               Card Type
             </label>
-            <DropdownButton
-              title="Dropdown"
-              id="bg-nested-dropdown"
-              style={{ backgroundColor: '#1aff1a' }}
-            >
-              <MenuItem eventKey="1">Dropdown link</MenuItem>
-              <MenuItem eventKey="2">Dropdown link</MenuItem>
+            <DropdownButton title="Card Type" id="bg-nested-dropdown" style={{ backgroundColor: '#66cdaa' }}>
+              <MenuItem eventKey="1">Card</MenuItem>
             </DropdownButton>
           </div>
           <div className="col-lg-4  ">
             <label style={{ marginRight: '20px', fontSize: 20 }}>
               Card Profile
             </label>
-            <DropdownButton
-              title="Dropdown"
-              id="bg-nested-dropdown"
-              style={{ backgroundColor: '#1aff1a' }}
-            >
-              <MenuItem eventKey="1">Dropdown link</MenuItem>
-              <MenuItem eventKey="2">Dropdown link</MenuItem>
+            <DropdownButton title="Card Profile" id="bg-nested-dropdown" style={{ backgroundColor: '#66cdaa' }}>
+              <MenuItem eventKey="1">PersonalCard</MenuItem>
             </DropdownButton>
           </div>
         </div>
@@ -62,7 +46,6 @@ class Preperso extends PureComponent {
           </div>
         </form>
       </div>
-    )
   }
 }
 export default Preperso
